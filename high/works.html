@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        /* Resetting default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 50px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.portfolio-item {
+    margin-bottom: 40px;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height:min-content;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+p {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: medium;
+    font-weight: 100; 
+    font-style: normal;
+    text-decoration: none;
+   
+       
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Graphic Design Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a passionate graphic designer with years of experience in creating visually stunning designs for various clients. My expertise includes branding, logo design, programming,SQL and more.</p>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfolio</h2>
+            <div class="portfolio-item">
+                <img src="/Program Files/Corel/beawesome-wallpaper-1600x900.jpg" alt="Portfolio Item 1">
+                <h3>Project 1</h3>
+                <p>Description of Project 1</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="/Program Files/Corel/call_for_action-wallpaper-1600x900.jpg" alt="Portfolio Item 2">
+                <h3>Project 2</h3>
+                <p>Description of Project 2</p>
+            </div>
+            <!-- Add more portfolio items as needed -->
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Graphic Design Portfolio</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
